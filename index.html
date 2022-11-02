@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday Night Fredrick</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="leftMenu">
+        <h1 style="color: white;">
+        Friday <br>
+        At <br>
+        Nights <br>
+        Freddy's <br>
+        </h1>
+
+        <button class="button" id="startGame">New Game</button> <br>
+        <button class="button">Continue Night 1</button>
+    </div>
+    </div>  
+
+    <div id="gameArea" style="display: none;">
+        <div class="officeBackground">
+        	<!--<button style="position: absolute;" onclick="startNight()">Everybody wanna be a superstar</button>-->
+        	<button id="doorButton" style="position: relative; background-color: red; top: 375px; left: 300px;" onclick="toggleDoor()">DOOR</button>
+        	<button id="lightButton" style="position: relative; background-color: blue; top: 405px; left: 300px; display: block;">LIGHT</button>
+        	<div class="doorBox" id="doorBox">
+        		<div class="animatronicAtDoor" id="animatronicAtDoor" style="background-image: none;"></div>
+        		<div class="door" id="door"></div>
+        	</div>
+            <div class="monitor" id="monitor">
+                <div class="stats">
+                    <div id="night" style="font-size: 20px"><b id="nightName">Night 1</b></div>
+                    <div id="room"><b id="roomName">NULL</b></div>
+                    <div id="time">12:00 AM</div>
+                    <div id="power">100%</div>
+                </div>
+                <div class="monitorControls">
+                    <button class="cameraButton" id="cam1" style="top: 80px; left: 190px;" onclick="openCam(cam1);">Cam 1</button>
+                    <button class="cameraButton" id="cam2" style="top: 95px; left: 90px;" onclick="openCam(cam2);">Cam 2</button>
+                    <button class="cameraButton" id="cam3" style="top: 125px; left: -85px;" onclick="openCam(cam3);">Cam 3</button>
+                    <button class="cameraButton" id="cam4" style="top: 175px; left: -37px;" onclick="openCam(cam4);">Cam 4</button>
+                    <button class="cameraButton" id="cam5" style="top: 205px; left: -185px;" onclick="openCam(cam5);">Cam 5</button>
+                    <button class="cameraButton" id="cam6" style="top: 10px; left: 20px;" onclick="openCam(cam6);">Cam 6</button>
+                    <button class="cameraButton" id="cam7" style="top: 160px; left: 130px;" onclick="openCam(cam7);">Cam 7</button>
+                    <button class="ventButton" id="vent1" style="top: 215px; left: 3px;" onclick="toggleVent(vent1)">Vent 1</button>
+                    <button class="ventButton" id="vent2" style="top: 215px; left: 20px;" onclick="toggleVent(vent2)">Vent 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="gameOverScreen" style="display: none;">
+    	<p style="position: absolute;">Game Over <br><button id="backToMenu">Back to Menu</button></p>
+    	<div id="jumpscareScreen" style="display: none;">
+    		
+    	</div>
+    </div>
+
+    <div id="gameWonScreen" style="display: none;">
+    	<p style="position: absolute;">Game Won<br>
+    	</div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

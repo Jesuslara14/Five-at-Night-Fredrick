@@ -1,0 +1,123 @@
+body
+{
+    background-color: black;
+}
+
+/*id's*/
+
+#gameOverScreen
+{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+
+#gameWonScreen
+{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+
+#jumpscareScreen
+{
+	width: 60%;
+	height: 100vh;
+	background-color: red;
+	margin-left: 20%;
+}
+
+/*classes*/
+
+.leftMenu
+{
+    float: left;
+    margin: 100px 0px 0px 200px;
+}
+
+.officeBackground
+{
+    width: 1800px;
+    height: 800px;
+    background-image: url('office-fotdnagf.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.monitor
+{
+    width: 700px;
+    height: 550px;
+    margin: 200px 0px 10px 0px;
+    background-color: black;
+    float: right;
+    border: 10px rgb(61, 61, 61) solid;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0
+}
+
+.monitorControls
+{
+    width: 250px;
+    height: 300px;
+    margin-top: 250px;
+    float: right;
+    background-image: url('map-for-fanf.png');
+    z-index: 3;
+}
+
+.cameraButton
+{
+    position: relative;
+    font-size: 10px;
+}
+
+.ventButton
+{
+    position: relative;
+    font-size: 10px;
+    background-color: blue;
+}
+
+.stats
+{
+    position: absolute;
+    width: 200px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.doorBox
+{
+	position: absolute;
+	top: 250px;
+	left: 375px;
+	width: 370px;
+	height: 560px;
+	background-color: black;
+	background-size: 100%;
+}
+
+.door
+{
+	position: absolute;
+	width: 370px;
+	height: 0px;
+	background-image: url('doortexture.png');
+	background-size: 100%;
+	transition: 0.5s;
+}
+
+.animatronicAtDoor
+{
+	position: Absolute;
+	width: 370px;
+	height: 500px;
+	top: 60px;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}
